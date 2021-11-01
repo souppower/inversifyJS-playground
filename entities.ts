@@ -7,15 +7,18 @@ import { TYPES } from "./types";
 
 @injectable()
 class Katana implements Weapon {
+    name = 'old katana';
     public hit() {
-        return "first katana";
+        return "kanata!";
     }
 }
 
 @injectable()
-class Katana2 implements Weapon {
+class Nunchaku implements Weapon {
+    name = 'old weapon with legacy';
+
     public hit() {
-        return "second katana";
+        return "nunchaku!";
     }
 }
 
@@ -45,4 +48,4 @@ class Ninja implements Warrior {
 
 }
 
-export { Ninja, Katana, Katana2, Shuriken };
+export { Ninja, Katana, Nunchaku, Shuriken };
